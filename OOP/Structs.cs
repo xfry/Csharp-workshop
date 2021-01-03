@@ -14,8 +14,10 @@ namespace OOP
         public int X;
         public int Y;
 
+        //Una Struct puede tener constructor
         public Vec2(int x, int y) => (X, Y) = (x,y);
-
+        
+        //Puedes sobreescribir metodos existentes 
         public override string ToString() => $"({X}, {Y})";
     }
 }

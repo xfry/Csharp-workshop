@@ -6,13 +6,23 @@ namespace OOP
     {
         static void Main(string[] args)
         {
-            Actor Human = new Actor();
-            Human.Strength = 40;
+            //You can start instantiating the type
+            Vec2 Vec = new Vec2(100,200);
+            Vec2 VecCopy = Vec;
+            
+            //As you can see this changes will be made by Value.
+            VecCopy.Y = 500;
+            Console.WriteLine($"Vec: {Vec}");
+            Console.WriteLine($"VecCopy: {VecCopy}");
+            Console.WriteLine($"Vec: after modified VecCopy: {Vec}");
+            ChangeAndDisplay(VecCopy);
+            Console.WriteLine($"VecCopy: after calling Change: {VecCopy}");
+        }
 
-            Console.WriteLine("Hello World! {0}", Human.Strength);
-            Console.WriteLine("Runnin speed: {0}", Human.Run());
-            Console.WriteLine("move: {0}", Human.Constitution);
-            System.Console.WriteLine("Is Human?: {0}", Human.CheckClass(ActorType.Elfo));
+        public static void ChangeAndDisplay (Vec2 Vec)
+        {
+            Vec.X = 300;
+            Console.WriteLine($"copy of VecCopy: {Vec}");
         }
     }
 }

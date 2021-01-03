@@ -1,13 +1,13 @@
-# Un Repositorio `C#` Para Practicar
+# Este es un repositorio de practicas de algunos conceptos del lenguaje `C#`
 
-## Lista de conceptos: Encontrara una rama por cada concepto a aprender.
+## Lista de conceptos:
 
 - Tipos de datos
 - Arreglos
 - Listas
 - Listas Linkeadas
 - Diccionarios
-- OOP (Classes & Principios - Structs)
+- Clases
 - Iteradores
 - Indexadores
 - Interfaces

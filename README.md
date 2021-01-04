@@ -1,4 +1,4 @@
-# Structs & Boxing 
+# Classes
 ## Concepto
 
-- OOP (Classes & Principios - Structs)
+- OOP (Classes & Properties)

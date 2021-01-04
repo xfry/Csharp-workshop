@@ -12,7 +12,7 @@ namespace OOP
 
             //Usamos el value type Vec2, y le hacemos Boxing (Lea Struct.cs para entender.)
             Vec2 Vec = new Vec2(100,200);
-            Vec2 VecCopy = Vec;
+            Vec2 VecCopy = Vec; //Boxing implicito
             
             //Demostrando por que las Structs son Value Type
             VecCopy.Y = 500;
@@ -20,7 +20,9 @@ namespace OOP
             Console.WriteLine($"VecCopy: {VecCopy}");
             Console.WriteLine($"Vec: after modified VecCopy: {Vec}");
             ChangeAndDisplay(VecCopy);
-            Console.WriteLine($"VecCopy: after calling Change: {VecCopy}");
+            Console.WriteLine($"VecCopy: after calling ChangeAndDisplay: {VecCopy}");
+            Vec = (Vec2)VecCopy; //Unboxing explicito
+            Console.WriteLine($"Vec - despues de Uboxing: {Vec}");
         }
 
         //Metodo que recibe un Structura por valor.
